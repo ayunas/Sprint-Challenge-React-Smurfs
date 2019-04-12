@@ -8,11 +8,13 @@ class Smurfs extends Component {
     
     axios.delete(`http://localhost:3333/smurfs/${id}`)
     .then(res => {
-      console.log(res);
+      console.log(res.data[{id}]);
+      window.location.reload();
     })
     .catch( err => {
       console.log(err);
     })
+
   }
 
   render() {
