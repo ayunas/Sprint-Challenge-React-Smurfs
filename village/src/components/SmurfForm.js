@@ -32,6 +32,7 @@ class SmurfForm extends Component {
     .catch(err => {
       console.log(err);
     })
+    this.props.history.push('/smurfs')
     window.location.reload();
     return;
   }
