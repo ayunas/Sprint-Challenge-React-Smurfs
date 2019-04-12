@@ -39,6 +39,7 @@ class Smurfs extends Component {
                   smurf={smurf}
                   deleteSmurf={this.deleteSmurf}
                 />
+    
             );
           })}
         </ul>
