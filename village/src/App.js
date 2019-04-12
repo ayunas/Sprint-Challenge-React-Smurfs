@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 import './App.css';
 import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
@@ -13,10 +13,14 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      smurfs: [{name: 'smurfette', age: 99, height: '10cm'}]
-    })
 
+    axios.get('http://localhost:3333/smurfs')
+    .then( res => {
+      console.log(res.data);
+    })
+    // this.setState({
+    //   smurfs: [{name: 'smurfette', age: 99, height: '10cm'}]
+    // })
   }
   
 
