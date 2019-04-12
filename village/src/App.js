@@ -17,6 +17,12 @@ class App extends Component {
     axios.get('http://localhost:3333/smurfs')
     .then( res => {
       console.log(res.data);
+      this.setState( {
+        smurfs: res.data
+      })
+    })
+    .catch( err => {
+      console.log(err);
     })
     // this.setState({
     //   smurfs: [{name: 'smurfette', age: 99, height: '10cm'}]
@@ -28,7 +34,6 @@ class App extends Component {
   // Notice what your map function is looping over and returning inside of Smurfs.
   // You'll need to make sure you have the right properties on state and pass them down to props.
   render() {
-    console.log(this.state);
     return (
       <div className="App">
         <SmurfForm />
