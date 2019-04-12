@@ -6,9 +6,42 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 .headerBtn {
-  background: green;
+  background: #3DACE1;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.SmurfForm {
+  margin-top: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.submit {
+  background: #3DACE1;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.Smurf {
+  border: 5px solid #3DACE1;
+  margin-left: 0;
+  margin-right: 40px;
+  padding: 10px;
 }
