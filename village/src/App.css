@@ -1,22 +1,36 @@
+html {
+
+  background: url('./smurfs.jpg');
+
+}
+
+
 .App {
   text-align: center;
+  
 }
 
 header {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
 
-.headerBtn {
+h3, p, strong {
+  color: white;
+  font-family: fantasy;
+}
+
+/* .headerBtn {
   background: #3DACE1;
   padding: 10px;
   border-radius: 10px;
   color: white;
-}
+} */
 
 .SmurfForm {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 form {
@@ -31,17 +45,35 @@ input {
   padding: 10px;
   border-radius: 10px;
 }
-
+/* 
 .submit {
   background: #3DACE1;
   padding: 10px;
   border-radius: 10px;
   color: white;
+} */
+
+ul {
+  display: flex;
+  justify-content: center;
 }
 
 .Smurf {
   border: 5px solid #3DACE1;
+  border-radius: 30px;
   margin-left: 0;
   margin-right: 40px;
   padding: 10px;
+  background-color: #3DACE1;
+}
+
+.deleteBtn {
+  background: red;
+}
+
+button {
+  background: #3DACE1;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
 }
