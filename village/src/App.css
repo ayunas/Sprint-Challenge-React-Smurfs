@@ -1,10 +1,14 @@
 html {
 
-  background: url('./smurfs.jpg');
+  /* background: url('./smurfs.jpg'); */
+  /* background-image: url('./smurfs.jpg'); */
+  background-image: url('./smurf-peace.jpg');
+  background-size: cover;
 }
 
 .App {
   text-align: center;
+  background-image: url('./smurf-peace.jpg') cover;
 }
 
 header {
@@ -61,6 +65,7 @@ input {
 ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Smurf {
@@ -69,6 +74,7 @@ ul {
   margin-right: 40px;
   padding: 10px;
   background-color: #3DACE1;
+  margin: 10px;
 }
 
 .deleteBtn {
